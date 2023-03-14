@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/idCardFilmes"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clickable="true">
+    android:layout_width="190dp"
+    android:layout_height="270dp"
+    android:clickable="true"
 
+    >
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <ImageView
         android:id="@+id/idImaFilmes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
         android:src="@drawable/creed"
+        android:scaleType="centerInside"
         />
 
     <TextView
+        android:layout_margin="3dp"
+
         android:id="@+id/idTituloFIlmes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="12sp"
         android:layout_gravity="center_horizontal"
-        android:text="Titulo"
-        android:textColor="#1441B3" />
+        android:text="Creed: nascido para lutar"
+        android:textColor="#000000" />
 
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>
